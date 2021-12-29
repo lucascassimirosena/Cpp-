@@ -51,5 +51,8 @@ char g = '7';
 char f = '8';
 char p = '9';
 
-return 0;
+cout << "Let's play a game just to warm up" << endl;
+cout << "I say a letter and you tell me the corresponding number in the major system." << endl;
+
+
 }
