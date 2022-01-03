@@ -7,20 +7,29 @@ int main()
     cout << "The guard requests you the correct code to enter it..." << endl;
 
     const int a = 4;
-    const int b = 2;
-    const int c = 6;
+    const int b = 3;
+    const int c = 2;
 
     //Variables can be changed but constants can't
 
- 
+    const int CodeSum = a + b +c;
+    const int CodeProduct = a * b * c;
 
-    int sum = a + b + c;
-    cout << sum << endl;
+    cout << "+ There are 3 numbers in the code" << endl;
+    cout << "+ The codes adds-up to: " << CodeSum << endl;
+    cout << "+ The codes multiply to give: " << CodeProduct << endl;
 
-    int product = a * b * c;
-    cout << product << endl;
+    int GuessA;
+    int GuessB;
+    int GuessC;
+    cout << "What's your guess? " << endl;
+    cin >> GuessA; 
+    cin >> GuessB; 
+    cin >> GuessC;
+    
 
-
+    int GuessSum = GuessA + GuessB + GuessC;
+    int GuessProduct = GuessA * GuessB * GuessC;
 
 
     return 0;
