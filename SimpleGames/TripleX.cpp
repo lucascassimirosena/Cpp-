@@ -31,6 +31,18 @@ int main()
     int GuessSum = GuessA + GuessB + GuessC;
     int GuessProduct = GuessA * GuessB * GuessC;
 
+    if (GuessSum == 9)
+    {
+        if (GuessProduct == 24)
+        {
+        cout << "Nice job! You may enter the party.\n" << endl;
+        }
+    }
+    else
+    {
+        cout << "You can't enter.\n" << endl;
+    }
+
 
     return 0;
 }
