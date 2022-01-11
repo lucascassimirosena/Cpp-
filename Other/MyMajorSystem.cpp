@@ -40,19 +40,34 @@ using namespace std;
 int main()
 {
 
-char s = '0';
-char t = '1';
-char n = '2';
-char m = '3';
-char r = '4';
-char l = '5';
-char ch = '6';
-char g = '7';
-char f = '8';
-char p = '9';
+const int s = 0;
+const int t = 1;
+const int n = 2;
+const int m = 3;
+const int r = 4;
+const int l = 5;
+const int ch = 6;
+const int g = 7;
+const int f = 8;
+const int p = 9;
+
+int guess;
 
 cout << "Let's play a game just to warm up" << endl;
 cout << "I say a letter and you tell me the corresponding number in the major system." << endl;
+cout << "S: ";
+cin >> guess;
 
+
+if (guess == s)
+{
+   cout << "Well done!" << endl;
+}
+else
+{
+cout << "Try again." << endl;
+}
+
+cout << 
 
 }
