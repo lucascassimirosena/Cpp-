@@ -8,7 +8,9 @@ void PrintIntroduction()
     cout << "The guard requests you the correct code to enter it..." << endl;
 }
 
-void PlayGame()
+
+
+bool PlayGame()
 {
     PrintIntroduction();
 
@@ -41,11 +43,13 @@ void PlayGame()
         if (GuessProduct == 24)
         {
         cout << "Nice job! You may enter the party.\n" << endl;
+        return true;
         }
     }
     else
     {
         cout << "You can't enter.\n" << endl;
+        return false;
     }
 
 
@@ -53,6 +57,11 @@ void PlayGame()
 
 int main()
 {
-    PlayGame();
-    return 0;
+while (true)
+{
+    bool bLevelComplete = PlayGame();
+    cin.clear(); //Clear any errors
+    cin.ignore(); //Discards the buffer
+
+}
 }
