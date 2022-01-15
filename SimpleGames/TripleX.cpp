@@ -2,17 +2,17 @@
 using namespace std;
 
 
-void PrintIntroduction()
+void PrintIntroduction(int Difficulty)
 {
-    cout << "You are about to enter a secret party" << endl;
-    cout << "The guard requests you the correct code to enter it..." << endl;
+    cout << "You are about to enter a secret party on level " << Difficulty;
+    cout << " The guard requests you the correct code to enter it..." << endl;
 }
 
 
 
-bool PlayGame()
+bool PlayGame(int Difficulty)
 {
-    PrintIntroduction();
+    PrintIntroduction(Difficulty);
 
     const int a = 4;
     const int b = 3;
@@ -59,9 +59,16 @@ int main()
 {
 while (true)
 {
-    bool bLevelComplete = PlayGame();
+    int LevelDifficulty = 1;
+    bool bLevelComplete = PlayGame(LevelDifficulty);
     cin.clear(); //Clear any errors
     cin.ignore(); //Discards the buffer
+
+    if (bLevelComplete)
+    {
+        ++LevelDifficulty;
+    }
+    
 
 }
 }
